@@ -7,7 +7,7 @@ import Player from "./components/Player";
 function App() {
   return (
     <>
-      <Container fluid>
+      <Container fluid className="main-sec">
         <Row>
           <SideBar />
           <Home />

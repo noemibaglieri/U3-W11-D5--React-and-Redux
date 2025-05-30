@@ -7,7 +7,7 @@ const Player = () => {
   const likedSongs = useSelector((state) => state.likedSongs.content);
   return (
     <>
-      <Container fluid className="fixed-bottom bg-container pt-1">
+      <Container fluid className="player fixed-bottom bg-container pt-1">
         <Row className="h-100">
           <Col lg={10} className="offset-lg-2">
             <Row className="h-100 justify-content-start align-items-center">
@@ -17,7 +17,7 @@ const Player = () => {
                   <p className="text-white mb-0">{playingSong.title}</p>
                   <p className="text-white fw-bold mb-0">{playingSong.singer}</p>
                 </div>
-                <div className="like-this-song text-white">{likedSongs.includes(playingSong.songId) ? <HeartFill /> : <Heart />}</div>
+                {playingSong && <div className="like-this-song text-white">{likedSongs.includes(playingSong.songId) ? <HeartFill /> : <Heart />}</div>}
               </Col>
               <Col sm={6} md={4} className="playerControls">
                 <div className="d-flex">

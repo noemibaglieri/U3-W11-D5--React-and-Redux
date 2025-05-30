@@ -165,3 +165,7 @@ body {
 .like-this-song {
   cursor: pointer;
 }
+
+.main-sec {
+  padding-bottom: 10rem;
+}
