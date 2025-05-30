@@ -28,14 +28,14 @@ const SideBar = () => {
               </Form>
             </Navbar.Collapse>
           </Container>
-          <div className="nav-btn d-flex flex-column align-items-start ps-3">
+          <div className="nav-btn d-flex flex-column align-items-start ps-3 gap-3">
             <Button className="signup-btn mb-2" variant="primary">
               Sign Up
             </Button>
             <Button className="login-btn mb-2" variant="secondary">
               Login
             </Button>
-            <div>
+            <div className="text-center align-self-center">
               <a href="#">Cookie Policy</a> | <a href="#">Privacy</a>
             </div>
           </div>

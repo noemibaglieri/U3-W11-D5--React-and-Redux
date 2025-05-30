@@ -17,7 +17,7 @@ const Player = () => {
                   <p className="text-white mb-0">{playingSong.title}</p>
                   <p className="text-white fw-bold mb-0">{playingSong.singer}</p>
                 </div>
-                {playingSong && <div className="like-this-song text-white">{likedSongs.includes(playingSong.songId) ? <HeartFill /> : <Heart />}</div>}
+                {playingSong.title && <div className="like-this-song text-white">{likedSongs.includes(playingSong.songId) ? <HeartFill /> : <Heart />}</div>}
               </Col>
               <Col sm={6} md={4} className="playerControls">
                 <div className="d-flex">
