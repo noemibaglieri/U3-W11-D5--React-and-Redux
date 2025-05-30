@@ -11,8 +11,8 @@ const SideBar = () => {
               <img src="../src/assets/logo/logo.png" alt="Spotify Logo" width="131" height="40" />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" />
-            <Navbar.Collapse className=".navbar-collapse flex-column " id="navbarScroll">
-              <Nav className="flex-column">
+            <Navbar.Collapse className=" flex-column " id="navbarScroll">
+              <Nav className="flex-column align-self-start">
                 <Nav.Link className=".navbar-nav" href="#">
                   <HouseDoorFill /> Home
                 </Nav.Link>
